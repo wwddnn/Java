@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Qual a sua idade? ");
+        int idade = sc.nextInt();
+        
+        if (idade > 18 && idade < 70) {
+            System.out.println("Você pode votar! Use seu voto com sabedoria!");
+        }
+        else {
+            System.out.println("Poxa, que penam você ainda não pode votar. Na próxima você consegue!");
+        }
+       
+        sc.close();
+    }
+}
