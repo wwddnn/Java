@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escolha um número inteiro. ");
+        int numero1 = sc.nextInt();
+        System.out.println("Escolha mais um número inteiro. ");
+        int numero2 = sc.nextInt();
+        
+        int soma = numero1 + numero2;
+        
+        int eParOuImpar = soma % 2;
+        
+        System.out.println("A soma deles é um número ...");
+        
+        if (eParOuImpar == 0) {
+            System.out.println ("Par!");
+        } else {
+            System.out.println ("Ímpar!");
+            }
+        
+        
+        
+        sc.close();
+    }
+}
